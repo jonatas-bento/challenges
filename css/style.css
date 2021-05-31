@@ -1,20 +1,24 @@
 *{
     font-family: 'Overpass', sans-serif;
-    
+    margin: 0;
+    padding: 0;
 }
 
 body{
     overflow-x: hidden;
+    background-color: hsl(0,0%,96%);
 }
 header{
     background-color: hsl(356, 100%, 66%);
     background-image: url(/images/bg-pattern-intro.svg);
-    background-position: center;
+    background-position: 800% 53%;
+    background-size: 97%;
+    background-repeat: no-repeat;
     border-bottom-left-radius: 50px;
     display: flex;
     justify-content:space-around;
     height: 400px;
-    max-width: 1400px;
+    max-width: 1440px;
     color: white;
     
 }
@@ -29,14 +33,23 @@ nav{
     
 }
 
+header nav .menu-drop{
+    display:flex;
+    justify-content: flex-start;
+    width: 500px;
+    margin-top: 25px;
+}
+
 
 header nav .drop-down{
+    width: 100px;
     display: flex;
     flex-direction: column;
     align-content: space-around;
     position: relative;
     padding: 0;
     cursor: pointer;
+    
 }
 
 header nav .drop-down li{
@@ -174,6 +187,7 @@ nav .logo{
     justify-content: center;
     margin: 0;
     padding: 6%;
+    font-size: 2rem;
   }
 
   .left-one{
@@ -192,6 +206,14 @@ nav .logo{
 
   .left-one h4{
       color: hsl(208, 49%, 24%);
+      font-size: 1.5rem;
+      
+  }
+
+  .left-one p{
+      margin-top: 10px;
+      margin-bottom: 15px;
+      font-size: 14px;
   }
 
   .right-one{
@@ -225,31 +247,33 @@ nav .logo{
 
   .intermediary{
     background-color: hsl(208, 49%, 24%);
-    height: 400px;
+    height: 415px;
     display: flex;
     align-items: center;
     background-image: url(/images/bg-pattern-circles.svg);
     background-repeat: no-repeat;
-    background-position: -29% 87%;
-    background-size: 52%;
+    background-position: -46% 89%;
+    background-size: 68%;
     border-bottom-left-radius: 50px;
     border-top-right-radius: 50px;
     color: white;
-    margin-top: 20px;
+    margin-top: 19px;
+    margin-bottom: 15px;
   }
 
   .intermediary img{
-      height: 117%;
+      height: 123%;
+      margin-top: 27px;
+      margin-left: 30px;
   }
 
   .intermediary .text-intermediary{
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 39%;
     align-items: flex-start;
-    /* margin-left: 100px; */
-    padding: 56px;
-    margin: 97px;
+    padding: 75px;
+    margin: 0px;
   }
 
   .intermediary .text-intermediary h4{
@@ -259,32 +283,37 @@ nav .logo{
   }
 
   .two{
-    height: 579px;
+    height: 650px;
     position: relative;
     background-color: whitesmoke;
     background-image: url(/images/illustration-laptop-mobile.svg);
     background-repeat: no-repeat;
     background-position: -39% 85%;
     background-size: 62%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .two .text-two{
     display: flex;
     flex-direction: column;
-    width: 36%;
-    align-items: flex-start;
-    /* margin-left: 100px; */
-    padding: 56px;
-    margin-left: 450px;
+    width: 30%;
+    margin-left: 300px;
     font-size: 14px;
   }
 
   .two .text-two h4{
       font-weight: 600;
       font-size: 1.5rem;
-      margin-bottom: 2px;
+      margin-bottom: 10px;
       display: flex;
       align-items: center;
+      color: hsl(208, 49%, 24%);
+  }
+
+  .two .text-two p{
+      margin-bottom: 40px;
   }
 
   footer{
