@@ -1,3 +1,20 @@
+:root{
+    --White: hsl(0, 0%, 100%);
+    --footer-text: hsl(240, 2%, 79%);
+    --body-copy: hsl(207, 13%, 34%);
+    --footer-background: hsl(240, 10%, 16%);
+    
+    /*Background gradient - Intro/CTA mobile nav:*/
+    
+    --verylight-red: hsl(13, 100%, 72%);
+    --light-red: hsl(353, 100%, 62%);
+    
+    /*Background gradient - body*/
+    
+    --darkgrayblue: hsl(237, 17%, 21%);
+    --internal-mobile: hsl(240, 17%, 95%);
+    --darkdesaturatedblue: hsl(237, 23%, 32%);
+}
 *{
     font-family: 'Overpass', sans-serif;
     margin: 0;
@@ -9,18 +26,23 @@ body{
     background-color: hsl(0,0%,96%);
 }
 header{
-    background-color: hsl(356, 100%, 66%);
-    background-image: url(/images/bg-pattern-intro.svg);
-    background-position: 800% 53%;
-    background-size: 97%;
+    background-image: linear-gradient(to right,  hsla(13, 100%, 72%, 0.85), hsla(353, 100%, 62%, .99)),
+    url(/images/bg-pattern-intro.svg);
+    background-position: 25% 51%;
+    background-size: 211%;
     background-repeat: no-repeat;
     border-bottom-left-radius: 50px;
     display: flex;
     justify-content:space-around;
-    height: 400px;
+    height: 450px;
     max-width: 1440px;
     color: white;
     
+}
+
+header h1{
+    margin-top: 40px;
+    font-size: 2.5rem;
 }
 
 nav{
@@ -102,6 +124,10 @@ header nav .login-sign .btn_:hover{
     border: none;
 }
 
+header .hamburguer{
+    display: none;
+}
+
 header .message-first{
     display: flex;
     align-items: center;
@@ -110,6 +136,9 @@ header .message-first{
     position: absolute;
     top: 160px;
 
+}
+header .message-first h1{
+    
 }
 
 header .buttons-header{
@@ -157,8 +186,9 @@ header .buttons-header .btn_2:hover{
 
 
 
-nav .logo{
-    margin-top: 15px;
+header .logo{
+    margin-top: 30px;
+    margin-left: 35px;
 }
 
 
@@ -282,6 +312,10 @@ nav .logo{
       margin-bottom: 2px;
   }
 
+  .intermediary .text-intermediary p{
+      font-size: 14px;
+  }
+
   .two{
     height: 650px;
     position: relative;
@@ -322,15 +356,179 @@ nav .logo{
       align-items: center;
       background-color: hsl(240, 10%, 16%);
       color: white;
-      height: 200px;
+      height: 300px;
       border-top-right-radius: 50px;
   }
 
   footer ul{
-      list-style: none;
-      font-size: 11px;
+    list-style: none;
+    font-size: 11px;
+    height: 200px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  footer ul li{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 25px;
+  }
+
+  footer ul p{
+      margin-top: 10px;
+      margin-bottom: 30px;
+      font-weight: 600;
   }
 
   footer .logo-footer{
-      margin-top: 20px;
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-start;
+    height: 200px;
   }
+
+
+  @media (max-width:768px) {
+    header{
+        width: 768px;
+        height: 400px;
+    }
+
+    header .logo{
+        margin-top: 35px;
+        margin-left: 2px;
+    }
+
+    header .message-first{
+        top: 115px;
+    }
+
+    header .message-first h1{
+        margin-bottom: 10px;
+    }
+
+    header .message-first p{
+        margin-bottom: 10px;
+    }
+
+    header nav{
+        width: 500px;
+
+    }
+    header nav .login-sign{
+        margin-top:10px
+    }
+    .intermediary .text-intermediary h4{
+        font-size: 1.35rem;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    .intermediary .text-intermediary p{
+        font-size: 0.90rem;
+        text-align: center;
+        margin: 0;
+    }
+
+    .two{
+        background-position: -69% 39%;
+        background-size: 74%;
+    }
+    }
+
+    
+  
+
+    @media (max-width:376px){
+
+        header{
+            width: 376px;
+            position: relative;
+            height: 666px;
+            border-bottom-left-radius: 100px;
+        }
+          header .message-first {
+              display: flex;
+              align-content: center;
+              justify-content: center;
+          }
+
+          header .message-first h1{
+              font-size: 2.0rem;
+              text-align:justify;
+              
+          }
+    
+          header nav{
+            width: 350px;
+            height: 439px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            background: var(--White);
+            position: relative;
+            margin: auto;
+            right: 45px;
+            top: 30px;
+            z-index: -50;
+            border-radius: 10px;
+            color: var(--darkgrayblue);
+          }
+    
+          header nav .login-sign{
+            display: flex;
+            align-content: center;
+            height: 80px;
+            flex-direction: column;
+            position: absolute;
+            bottom: 1px;
+          }
+
+          header nav .login-sign .btn_0{
+              color: var(--darkgrayblue);
+              font-weight: bolder;
+              font-size: 1.2rem;
+              margin-bottom: 5px;
+          }
+
+          header nav .login-sign .btn_{
+              background-image: linear-gradient(to right, var(--verylight-red), var(--light-red));
+              color: var(--White);
+              height: 35px;
+          }
+    
+          header .logo{
+              display: flex;
+              width: 40px;
+              height: 40px;
+              margin-left: 55px;
+          }
+          header nav .menu-drop{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            font-size: 1.2rem;
+            
+          }
+
+          header nav .menu-drop .drop-down{
+            margin-bottom: 50px;
+          }
+
+    
+         header .hamburguer{
+            display: flex;
+            width: 50px;
+            height: 50px;
+            
+            align-items: center;
+            
+            position: absolute;
+            top: 30px;
+            left: 330px;
+          }
+      }
