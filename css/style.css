@@ -527,8 +527,21 @@ footer .logo-footer {
 
     header nav .menu-drop .drop-down {
         margin-bottom: 50px;
+        display: flex;
+        align-items: center;
+        width: 100px;
     }
 
+    header nav .menu-drop .drop-down li{
+        display: none;
+    }
+
+    header nav .drop-down:hover>li {
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        background: var(--footer-background);
+    }
 
     header .hamburguer {
         display: flex;
@@ -557,13 +570,6 @@ footer .logo-footer {
         
         
     }
-/*
-    .lineHamburguer {
-        height: 6px;
-        background-color: #fff;
-        border-radius: 3px;
-        transition: all 250ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
-      }*/
       
       .lineHamburguer:first-child {
         animation: firstLinetoClose 240ms cubic-bezier(0.23, 0.95, 0.58, 1.37);
