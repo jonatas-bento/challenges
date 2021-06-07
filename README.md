@@ -25,7 +25,7 @@ The challenge consists in building out this landing page and get it looking as c
 
 My task was to build out the project to the designs inside the `/design` folder. There were both a mobile and a desktop version of the design. 
 
-The designs were in JPG static format. Using JPGs will mean that I needed to use my best judgment for styles such as `font-size`, `padding` and `margin`.
+The designs were in JPG static format. Using JPGs mean that I needed to use my best judgment for styles such as `font-size`, `padding` and `margin`.
 
 ### The challenge
 
@@ -54,25 +54,6 @@ You will be able to:
 ### What I learned
 
 Something that was amazing in the process of building this landing page could be said of the styling bakground. Inserting gradient into the same background of an image, and customizing the location was for me a good thing to keep in my mind for next projects.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
 
 
 ## Author
