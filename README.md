@@ -16,12 +16,12 @@ This is a solution to the [Blogr landing page challenge on Frontend Mentor](http
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+
 
 ## Overview
 
 The challenge consists in building out this landing page and get it looking as close to the design as possible.
-=======
+
 
 My task was to build out the project to the designs inside the `/design` folder. There were both a mobile and a desktop version of the design. 
 
@@ -58,7 +58,6 @@ Something that was amazing in the process of building this landing page could be
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
 - Frontend Mentor - [@jonatasbento](https://www.frontendmentor.io/profile/yourusername)
 - Linkedin [jonatas-bento] (linkedin.com/in/jonatas-bento)
 
