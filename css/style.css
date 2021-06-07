@@ -65,6 +65,7 @@ header nav .menu-drop {
 }
 
 
+
 header nav .drop-down {
     width: 100px;
     display: flex;
@@ -76,6 +77,14 @@ header nav .drop-down {
 
 }
 
+header nav .menu-drop .drop-down p::after{
+    content: '\02C5';
+    font-size: .8rem;
+    margin-left: 10px;
+    height: 2px;
+    
+}
+
 header nav .drop-down li {
     display: none;
 
@@ -85,7 +94,7 @@ header nav .drop-down li {
 header nav .drop-down:hover>li {
     display: flex;
     padding: 3px;
-    background-color: gray;
+    background-color: var(--body-copy);
     cursor: pointer;
     color: black;
 
@@ -279,9 +288,10 @@ header .logo {
 
 .intermediary {
     background-color: hsl(208, 49%, 24%);
-    height: 415px;
+    height: 395px;
     display: flex;
     align-items: center;
+    
     background-image: url(/images/bg-pattern-circles.svg);
     background-repeat: no-repeat;
     background-position: -46% 89%;
@@ -294,8 +304,8 @@ header .logo {
 }
 
 .intermediary img {
-    height: 123%;
-    margin-top: 27px;
+    height: 126%;
+    margin-top: 33px;
     margin-left: 30px;
 }
 
@@ -532,6 +542,13 @@ footer .logo-footer {
         width: 100px;
     }
 
+    header nav .menu-drop .drop-down p::after{
+        content: '\02C5';
+        font-size: .8rem;
+        margin-left: 2px;
+        
+    }
+
     header nav .menu-drop .drop-down li{
         display: none;
     }
@@ -540,7 +557,9 @@ footer .logo-footer {
         width: 200px;
         display: flex;
         justify-content: center;
-        background: var(--footer-background);
+        background: hsla(240, 2%, 79%, 0.7);
+        border-radius: 5px;
+        border: none;
     }
 
     header .hamburguer {
