@@ -747,7 +747,7 @@ footer .logo-footer {
     }
 
     footer{
-        height: 800px;
+        height: 750px;
         display: flex;
         flex-direction: column;
         align-items: center;
