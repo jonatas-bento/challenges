@@ -94,9 +94,10 @@ header nav .drop-down li {
 header nav .drop-down:hover>li {
     display: flex;
     padding: 3px;
-    background-color: var(--body-copy);
+    background-color: hsla(240, 2%, 79%, 0.7);
     cursor: pointer;
     color: black;
+    transition: all .5s ease-in-out;
 
 
 }
@@ -149,7 +150,6 @@ header .message-first {
 
 }
 
-header .message-first h1 {}
 
 header .buttons-header {
     display: flex;
@@ -460,7 +460,7 @@ footer .logo-footer {
 @media (max-width:376px) {
 
     header {
-        width: 376px;
+        width: 100%;
         position: relative;
         height: 650px;
         border-bottom-left-radius: 100px;
@@ -560,6 +560,7 @@ footer .logo-footer {
         background: hsla(240, 2%, 79%, 0.7);
         border-radius: 5px;
         border: none;
+        transition: all .5s ease-in-out;
     }
 
     header .hamburguer {
